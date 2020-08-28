@@ -1145,6 +1145,7 @@ class SearchComponent {
         this.result = null;
     }
     ngOnInit() {
+        console.log([window.location]);
         this.karmasearchService.getExampleIP().subscribe((response) => {
             this.ipv4 = response;
             //console.log([this.ngOnInit, response]);
